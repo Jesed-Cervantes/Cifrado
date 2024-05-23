@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cifrado</title>
+</head>
+<body>
+    <section>
+        <div class="mt-6 flex justify-center mb-10">
+            <p class="text-white text-5xl italic">Cifrado Cesar</p>
+        </div>
+        <div class="flex justify-center mt-6">
+            <form id="cifrarFormulario">
+                <input type="text" id="TextoCifrar" placeholder="Ingrese texto a cifrar" required class="rounded-sm border-2 border-slate-50 border-x-0 border-t-0 focus:outline-none focus:border-lime-500 focus:ring-lime-500 focus:ring-0 placeholder:italic placeholder:text-slate-50 bg-transparent text-white text-xl">
+                <input type="number" id="Desplazamiento" placeholder="Desplazamiento" min="0" max="25" required class="bg-transparent placeholder:italic placeholder:text-slate-50 w-48 border-2 border-slate-50 border-x-0 border-t-0 focus:outline-none focus:border-lime-500 focus:ring-sky-500 focus:ring-0 text-white text-xl">
+                <button type="submit"  class="bg-lime-500 text-white p-2 rounded hover:bg-slate-50 hover:text-lime-600 text-xl italic">Cifrar</button>
+            </form>
+        </div>
+        <div class="text-white flex justify-center flex items-center w-screen h-96 size-full">
+            <div class="justify-items-center p-4">
+                <p id="resultado" class="text-xl underline decoration-solid decoration-lime-400"></p>
+            </div>
+            <div class="justify-items-center p-4">
+                <p id="TextoDesincriptado" class="text-xl underline decoration-solid decoration-lime-400"></p>
+            </div>
+        </div>
+    </section>
+    <script src="Cifrado.js"></script>
+</body>
+</html>
